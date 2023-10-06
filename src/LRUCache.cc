@@ -156,7 +156,8 @@ NAN_METHOD(LRUCache::Get) {
   }
   else {
     // Update timestamp
-    entry->touch(now);
+    // HACK: we don't need this for our use case, comment for now and add a proper option later
+    // entry->touch(now);
 
     // Move the value to the end of the LRU list.
     cache->lru.splice(cache->lru.end(), cache->lru, entry->pointer);

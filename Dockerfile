@@ -1,4 +1,4 @@
-FROM node:11-alpine
+FROM node:20-alpine
 
 # Add toolchain for compiling native modules
 RUN apk add --no-cache make gcc g++ python
