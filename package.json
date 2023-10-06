@@ -1,5 +1,5 @@
 {
-  "name": "lru-native2",
+  "name": "@b2wads/lru-native2",
   "version": "1.2.6-hack",
   "description": "LRU cache module written in C++",
   "keywords": [
